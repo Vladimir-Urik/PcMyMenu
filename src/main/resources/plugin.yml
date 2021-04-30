@@ -1,0 +1,9 @@
+name: PcMyMenu
+version: ${project.version}
+main: cz.pvpcraft.GGGEDR.PcMyMenus.PcMyMenusPlugin
+api-version: 1.16
+authors: [GGGEDR]
+depend: [PlaceholderAPI]
+softdepend: [CMI]
+commands:
+  pcmenu:

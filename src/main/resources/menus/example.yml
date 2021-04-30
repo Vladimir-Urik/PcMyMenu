@@ -1,0 +1,96 @@
+info:
+  title: "&c&lExample.yml"
+  commands:
+    - "example"
+
+syntax:
+  - "#########"
+  - "#   P   #"
+  - "#  CSN  #"
+  - "#########"
+
+items:
+  "#":
+    material: "GRAY_STAINED_GLASS_PANE"
+    amount: 1
+    name: " "
+    lore:
+      - " "
+    # actions:
+      # - "close"
+      # - "console: kill %player%"
+      # - "player: home"
+      # - "msg: &8[&c&l!&8] &7Klikol si na šedé sklo"
+
+  P:
+    material: "<head:%player_name%>"
+    amount: 1
+    name: "&bGlobální statistiky"
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fTvé globální statistiky ze všech módů'
+      - ''
+      - '&b&lStatistiky'
+      - ' &8» &7Rank: &a%strikepractice_elo_rank%'
+      - ' &8» &7Zabití: &f%strikepractice_kills%'
+      - ' &8» &7Smrtí: &f%strikepractice_deaths%'
+      - ' &8» &7Global Elo: &f%strikepractice_global_elo%'
+      - ' &8» &7Si GGGEDR? <js>"%player_name%" == "GGGEDR" ? "&aÁno" : "&cNie"</js>'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+
+  C:
+    material: '<skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzBhMzU5NTdmY2UyMzQ0YWE4NTU3YmE2YjM2MTg3YWI0MTUyNDk5MzQ2MDdiYmJlZDJhMDUzYzNhODZjYWZjMCJ9fX0=>'
+    amount: 1
+    name: "&9&lCombo"
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fTvé statistiky v módu &9Combo'
+      - ''
+      - '&9&lStatistiky'
+      - ' &8» &7Zabití: &f%praddon_stats_kills_comboelo%'
+      - ' &8» &7Smrtí: &f%praddon_stats_deaths_comboelo%'
+      - ' &8» &7Elo: &f%strikepractice_elo_comboelo%'
+      - ''
+      - '&9Kliknutím zobrazís top 5 hrácu'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - "close"
+      - "player: top5combo"
+
+  S:
+    material: '<skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMwN2VhY2M2Y2U5ZmQ0ODk5ZGIyYjRmN2E4OTY5YTE4NTFmZGM3M2FhMDdhZjk2MzNiMzBkNDY1YTE1In19fQ==>'
+    amount: 1
+    name: "&6&lSoup"
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fTvé statistiky v módu &6Soup'
+      - ''
+      - '&6&lStatistiky'
+      - ' &8» &7Zabití: &f%praddon_stats_kills_soupelo%'
+      - ' &8» &7Smrtí: &f%praddon_stats_deaths_soupelo%'
+      - ' &8» &7Elo: &f%strikepractice_elo_soupelo%'
+      - ''
+      - '&6Kliknutím zobrazís top 5 hrácu'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - "close"
+      - "player: top5soup"
+
+  N:
+    material: '<skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWQ5NjU5ZDQzNzc1YjlkMmMwZTQ2ODY2NDk4ZDk4ODcwNDY5NjY4YTFiZmUzYjg4NGZmNzY0YmRmMTQwYzExMSJ9fX0=>'
+    amount: 1
+    name: "&c&lNodebuff"
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fTvé statistiky v módu &cNodebuff'
+      - ''
+      - '&c&lStatistiky'
+      - ' &8» &7Zabití: &f%praddon_stats_kills_nodebuffelo%'
+      - ' &8» &7Smrtí: &f%praddon_stats_deaths_nodebuffelo%'
+      - ' &8» &7Elo: &f%strikepractice_elo_nodebuffelo%'
+      - ''
+      - '&cKliknutím zobrazís top 5 hrácu'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - "close"
+      - "player: top5nodebuff"

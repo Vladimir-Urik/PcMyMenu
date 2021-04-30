@@ -1,0 +1,48 @@
+#----------------------------#
+#          PcMyMenu          #
+#         By GGGEDR          #
+#      for PvPCraft.cz       #
+#----------------------------#
+
+#Actions types: (All actions support PlaceholderAPI and color codes)
+#| player: <command> #Send command as player
+#| msg: <message> #Send message to player
+#| console: <commands> #Send command to console
+#| server: <bungee-server-name> #Move player to server
+#| title: <title>;;;<subtitle> #Send title with subtitle to player
+#| sound: <sound> <float> <float> #Player sound to player
+#| close #Close menu
+#| refresh - Refresh item in menu
+
+#Examples usage:
+#| player: gamemode c
+#| msg: &8[&c&l!&8] &7Klikol si na item!
+#| console: give %player_name% diamond
+#| server: Lobby
+#| title: &bKlikol si na;;;&2Item
+#| sound: ENTITY_PLAYER_LEVELUP 1 2
+#| refresh
+#| close
+
+
+dev-settings:
+  debug: false
+
+commands:
+  main:
+    help:
+      - "&c&lPvPCraft PcMyMenu v%version%"
+      - "&7/pcmenu &c- &fZobrazí túto správu"
+      - "&7/pcmenu reload &c- &fReloadne config.yml a Menus"
+      # - "&7/pcmenus template &c- &fOtvorí template editor"
+      - "&7 "
+      - "&c&l• &7Developed by &cGGGEDR &7for &cPvPCraft.cz &7with &c&l<3"
+
+    reload: "&8[&c&lPcMyMenu&8] &7Plugin bol reloadnutý ( &c%menus% &7Menus in &c%time%ms &7)"
+
+    # template:
+      # open: "&8[&c&lPcMyMenu&8] &7Template editor bol otvorený!"
+      # close: "&8[&c&lPcMyMenu&8] &7Template editor bol zatvorený! (&c/plugins/PcMyMenu/menus/%id%.yml&7)"
+
+  errors:
+    player-only: "&8[&c&lPcMyMenu&8] &7Tento príkaz môže poslať len hráč!"

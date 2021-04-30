@@ -1,0 +1,276 @@
+info:
+  title: '&8Menu Ostrova'
+  commands:
+    - 'is menu'
+    - 'is panel'
+    - 'islandmenu'
+    - 'ismenu'
+    - 'ostrov'
+  actions:
+    open:
+      - '<js>"%superior_island_leader%" == "N/A" ? "msg: &8[&c&l!&8] &fNemáš vytvořený ostrov. Vytvoř si ho &c/is create <nazev>!" : ""</js>'
+      - '<js>"%superior_island_leader%" == "N/A" ? "console: titlemsg %player_name% &e&lOstrov%subtitle%/is create <nazev>" : ""</js>'
+      - '<js>"%superior_island_leader%" == "N/A" ? "close" : ""</js>'
+      - '<js>"%superior_island_leader%" != "N/A" ? "sound: ENTITY_PLAYER_LEVELUP 1 2" : ""</js>'
+
+syntax:
+  - '         '
+  - '    E    '
+  - ' D732148 '
+  - '   PW5   '
+  - '         '
+  - '9A##C####'
+items:
+  'H':
+    material: 'BOOK_AND_QUILL'
+    amount: 1
+    name: '&6Wikipedie'
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fChtěl bys vědět více informací'
+      - '&fo našem serveru?'
+      - ''
+      - '&8 ➽ &7Příkaz: &f/wiki'
+      - ''
+      - '&aKliknutím otevřeš wikipedii.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'close'
+      - 'player: helpmenu'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+  'D':
+    material: '<skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzk1ZDM3OTkzZTU5NDA4MjY3ODQ3MmJmOWQ4NjgyMzQxM2MyNTBkNDMzMmEyYzdkOGM1MmRlNDk3NmIzNjIifX19>'
+    name: '&aZměna biomu'
+    amount: 1
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fZměň si vzhled svého ostrova'
+      - '&fpodle své představy.'
+      - ''
+      - '&8 ➽ &7Příkaz: &f/is biome'
+      - ''
+      - '&aKliknutím otevřeš menu biomů.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'close'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+      - 'player: is biome'
+  'E':
+    material: 'GOLD_BLOCK'
+    name: '&eTOP Ostrovy'
+    amount: 1
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fZobraz si nejlepší ostrovy na'
+      - '&fnašem serveru!'
+      - ''
+      - '&8 ➽ &7Příkaz: &f/is top'
+      - ''
+      - '&aKliknutím otevřeš menu.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'close'
+      - 'player: is top'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+
+  'P':
+    material: '<skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTU1NzE4N2E3MjllMjFkMWU2YjNjZGYwODNhYWQyYTY0NmVmYWNhMmY0ODlkYWMxYjJmYTMyNGE0YTdkOSJ9fX0=>'
+    name: '&bNávštěvníci'
+    amount: 1
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fZjisti, kdo tajně navštěvuje'
+      - '&ftvůj ostrov bez tvého vědomí!'
+      - ''
+      - '&8 ➽ &7Příkaz: &f/navstevnici'
+      - ''
+      - '&aKliknutím otevřeš menu.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'close'
+      - 'player: is visitors'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+  'W':
+    material: '<skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBiZmMyNTc3ZjZlMjZjNmM2ZjczNjVjMmM0MDc2YmNjZWU2NTMxMjQ5ODkzODJjZTkzYmNhNGZjOWUzOWIifX19>'
+    name: '&bWarpy na ostrov'
+    amount: 1
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fProzkoumej ostrovy ostatních'
+      - '&fhráčů na serveru.'
+      - ''
+      - '&8 ➽ &7Příkaz: &f/is warps'
+      - ''
+      - '&aKliknutím otevřeš menu.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'close'
+      - 'player: is warps'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+  '#':
+    material: "GRAY_STAINED_GLASS_PANE"
+    amount: 1
+    name: '&f '
+    lore:
+      - "&f "
+  '1':
+    material: BOOK
+    amount: 1
+    name: '&dTvůj ostrov'
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fZde vidíš infromace o tvém'
+      - '&fostrově.'
+      - '&f'
+      - '&8 ➽ &7Vlastník: &d%superior_island_leader%'
+      - '&8 ➽ &7Název: &f%superior_island_name%'
+      - '&8 ➽ &7Level: &b%superior_island_level_format% &8[&e%superior_island_worth_format% Ⓩ&8]'
+      - '&8 ➽ &7Členové: &f%superior_island_team_size%&8/&7%superior_island_team_limit%'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+  '2':
+    material: MAGENTA_BED
+    name: '&5Teleport na ostrov'
+    amount: 1
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fZde najdeš všechny informace'
+      - '&fo teleportaci.'
+      - '&f'
+      - '&8 ➽ &7Teleportace: &f/is home'
+      - '&8 ➽ &7Nové místo: &f/is sethome'
+      - '&f'
+      - '&aKliknutím se teleportuješ domů.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'close'
+      - 'player: is go'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+  '3':
+    material: 'RED_DYE'
+    name: '&cSrdce ostrova'
+    amount: 1
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fVylepšuj své srdce ostrova&f,'
+      - '&faby sis odemkl nové možnosti!'
+      - ''
+      - '&8 ➽ &7Srdce ostrova: &fLevel %retroxtiers_tier%'
+      - ''
+      - '&aKliknutím otevřeš menu srdce.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'close'
+      - 'player: tiers'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+  '4':
+    material: NAME_TAG
+    name: '&aPřejmenuj svůj ostrov'
+    amount: 1
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fZde si můžeš přejmenovat svůj'
+      - '&fostrov podle sebe.'
+      - ''
+      - '&8 ➽ &7Příkaz: &f/is name <název>'
+      - ''
+      - '&aKliknutím přejmenuješ ostrov.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'msg: &f'
+      - 'msg: &8[&c&l!&8]&7 Napiš &f/is name <název>&7 pro přejmenování tvého ostrova!'
+      - 'msg: &f'
+      - 'close'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+  '5':
+    material: BARRIER
+    name: '&cBorder ostrova'
+    amount: 1
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fZměň barvu borderu a nebo ho'
+      - '&fjenom vypni.'
+      - ''
+      - '&aKliknutím otevřeš nabídku.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'close'
+      - 'player: is border'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+  '7':
+    material: HOPPER
+    amount: 1
+    name: '&bVylepšení ostrova'
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fZde si můžeš vylepšit svůj ostrov,'
+      - '&fkaždé vylepšení ostrova ti přidá'
+      - '&fpěkné bonusy.'
+      - ''
+      - '&bVylepseni:'
+      - '&8 ➽ &7Generátor: &f%superior_island_upgrade_cobblegen%'
+      - '&8 ➽ &7Růst plodin: &f%superior_island_crops_multiplier%'
+      - '&8 ➽ &7Multiplikátor spawneru: &f%superior_island_spawners_multiplier%'
+      - '&8 ➽ &7Multiplikátor dropu: &f%superior_island_drops_multiplier%'
+      - '&8 ➽ &7Limit hopperu: &f%superior_island_hoppers_limit%'
+      - ''
+      - '&aKliknutím otevřeš vylepšení.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'close'
+      - 'player: is upgrades'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+  '8':
+    material: '<head:%player_name%>'
+    amount: 1
+    name: '&bČlenové ostrova'
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fZde můžeš upravit role všech'
+      - '&fčlenů ostrova.'
+      - ''
+      - '&aKliknutím otevřeš menu.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'close'
+      - 'player: is members'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+  '9':
+    material: PAPER
+    amount: 1
+    name: '&4Oprávnění ostrova'
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fZde můžeš upravit všechny'
+      - '&fdostupná práva k rolím.'
+      - ''
+      - '&aKliknutím otevřeš menu.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'close'
+      - 'player: is permissions'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+  'A':
+    material: "COMPARATOR"
+    amount: 1
+    name: '&2Nastavení ostrova'
+    lore:
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+      - '&fNastav den na tvém ostrově'
+      - '&fnebo vypni spawnovaní mobů.'
+      - ''
+      - '&aKliknutím otevřeš nastavení.'
+      - '&8&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    actions:
+      - 'close'
+      - 'player: is settings'
+      - 'sound: UI_BUTTON_CLICK 1 1'
+  'C':
+    material: ARROW
+    amount: 1
+    name: '&cZpět'
+    lore:
+      - '&8Vratí tě zpátky.'
+    actions:
+      - 'close'
+      - 'player: menu'
+      - 'sound: UI_BUTTON_CLICK 1 1'
